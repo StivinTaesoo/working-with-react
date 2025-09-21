@@ -1,12 +1,13 @@
 import "./App.css";
+import ProductList from "./components/ProductList";
 import ShoppingList from "./components/ShoppingList";
+import { products, shoppingList } from "./data";
 
 function App() {
     return (
         <>
-            <ShoppingList
-                shoppingList={["Milk", "Bread", "Eggs", "Cheese", "Butter"]}
-            />
+            <ShoppingList shoppingList={shoppingList} />
+            <ProductList products={products} />
         </>
     );
 }

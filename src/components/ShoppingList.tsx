@@ -1,25 +1,22 @@
 import React from "react";
-import styles from "./ShoppingList.module.css";
-
-interface ShoppingListProps {
-    shoppingList: string[];
-}
+import styles from "./styles/ShoppingList.module.css";
+import type { ShoppingListProps } from "../types";
 
 const ShoppingList: React.FC<ShoppingListProps> = ({ shoppingList }) => {
     return (
         <>
-            <div className={styles.shopping_container}>
-                <h2 className={styles.shopping_title}>Shopping List</h2>
-                <ul className={styles.shopping_list}>
+            <div className="container">
+                <h1 className="title">Shopping List</h1>
+                <ul className="list">
                     {shoppingList.map((item, index) => (
-                        <li key={index} className={styles.shopping_item}>
-                            <span className={styles.item_number}>
-                                {index + 1}
-                            </span>
+                        <li key={index} className="item">
+                            <span className="item_number">{index + 1}</span>
                             <span
-                                className={`${styles.item_name} ${
-                                    item === "Eggs" && styles.strike_through
-                                }`}
+                                className={
+                                    item === "Eggs"
+                                        ? "item_name strike_through"
+                                        : "item_name"
+                                }
                             >
                                 {item}
                             </span>
