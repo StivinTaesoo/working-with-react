@@ -1,10 +1,17 @@
-import type { ProductListProps } from "../types";
+import type { Product } from "../types";
+
+interface ProductListProps {
+    products: Product[];
+}
 
 const ProductList: React.FC<ProductListProps> = ({ products }) => {
     return (
         <>
-            <div className="container">
-                <h1 className="title">Product List</h1>
+            <div className="container red_border">
+                <div className="title flex_center">
+                    <span className="item_number light_red_bg">2.2</span>
+                    <span className="light_red_text">Product List</span>
+                </div>
                 {products.map((product) => (
                     <div className="item space_between red_bg">
                         <div>
@@ -15,7 +22,7 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
                             className={
                                 product.price > 500
                                     ? "red_text item_name"
-                                    : "item_name "
+                                    : "item_name"
                             }
                         >
                             #{product.price}

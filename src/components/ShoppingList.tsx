@@ -1,12 +1,17 @@
 import React from "react";
-import styles from "./styles/ShoppingList.module.css";
-import type { ShoppingListProps } from "../types";
+
+interface ShoppingListProps {
+    shoppingList: string[];
+}
 
 const ShoppingList: React.FC<ShoppingListProps> = ({ shoppingList }) => {
     return (
         <>
-            <div className="container">
-                <h1 className="title">Shopping List</h1>
+            <div className="container blue_border">
+                <div className="title flex_center">
+                    <span className="item_number">2.1</span>
+                    <span>Shopping List</span>
+                </div>
                 <ul className="list">
                     {shoppingList.map((item, index) => (
                         <li key={index} className="item">

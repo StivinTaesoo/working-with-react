@@ -17,7 +17,7 @@
 .title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #1f2937;
+    color: #3b82f6;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -72,9 +72,32 @@
 .red_text {
     color: red;
 }
+.light_red_text {
+    color: #fcd5d5;
+}
 .red_bg {
-    background: rgb(252, 213, 213);
+    background: #fcd5d5;
+}
+.light_red_bg {
+    background: #fcd5d5;
 }
 .red_bg:hover {
-    background: rgb(252, 200, 200);
+    background: #fcc8c8;
+}
+.d_flex {
+    display: flex;
+}
+.flex_center {
+    display: flex;
+    align-items: center;
+}
+
+.blue_border {
+    border: 0.2px solid #cadcfa;
+}
+.red_border {
+    border: 0.2px solid #fcd5d5;
+}
+.text_left {
+    text-align: left;
 }
