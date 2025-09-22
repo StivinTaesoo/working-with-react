@@ -10,7 +10,9 @@ const AnimalFilter: React.FC = () => {
                 <span className="item_number ">2.5</span>
                 <span>Animal Filter</span>
             </div>
-            <p className="task_summary">Only render animals that start with the letter "E".</p>
+            <p className="task_summary">
+                Task: Only render animals that start with the letter "E".
+            </p>
             <ul className=" text_left">
                 {animalsStartWithE.map((animal, index) => {
                     return (

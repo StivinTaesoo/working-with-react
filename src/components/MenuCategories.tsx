@@ -11,8 +11,9 @@ const MenuCategories: React.FC<MenuDataProps> = ({ menuData }) => {
                 <span className="item_number ">2.3</span>
                 <span>Menu Categories</span>
             </div>
-            <p>
-                Display the categories as headings, and the items inside lists
+            <p className="task_summary">
+                Task: Display the categories as headings, and the items inside
+                lists
             </p>
             <div className="d_flex space_between">
                 {menuData.map((menu) => {

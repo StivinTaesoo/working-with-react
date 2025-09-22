@@ -1,12 +1,19 @@
 #root {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem;
     text-align: center;
 }
 
+.app {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+
 .container {
-    max-width: 400px;
+    width: 400px;
+    min-height: 300px;
     margin: 2rem auto;
     padding: 1.5rem;
     background-color: white;
@@ -20,6 +27,11 @@
     color: #3b82f6;
     margin-bottom: 1rem;
     text-align: center;
+}
+
+.task_summary {
+    color: #acadaf;
+    font-style: italic;
 }
 
 .list {
@@ -110,4 +122,16 @@
 }
 .red_border {
     border: 0.2px solid #fcd5d5;
+}
+
+@media (max-width: 760px) {
+    .app {
+        grid-template-columns: 100%;
+    }
+
+    .container {
+        max-width: 300px;
+        padding: 1rem;
+        margin: 0 auto;
+    }
 }

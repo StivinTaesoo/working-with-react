@@ -12,6 +12,10 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
                     <span className="item_number light_red_bg">2.2</span>
                     <span className="light_red_text">Product List</span>
                 </div>
+                <p className="task_summary">
+                    Task: Render each product as Name - $Price, but highlight
+                    (in red) any product with a price greater than $500.
+                </p>
                 {products.map((product) => (
                     <div className="item space_between red_bg">
                         <div>

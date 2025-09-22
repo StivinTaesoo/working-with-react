@@ -29,18 +29,22 @@ const StudentGroups: React.FC<StudentGroupsProps> = ({ students }) => {
                 group with a heading and a nested list of names.
             </p>
 
-            {Object.entries(studentsByGrade).map(([grade, studentsInGrade]) => (
-                <div key={grade} className="text_left">
-                    <h3 className="blue_text">Grade {grade}</h3>
-                    <ul className="list">
-                        {studentsInGrade.map((student) => (
-                            <li key={student.id} className="item_name">
-                                • {student.name}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            ))}
+            <div className="d_flex space_between">
+                {Object.entries(studentsByGrade).map(
+                    ([grade, studentsInGrade]) => (
+                        <div key={grade} className="text_left ">
+                            <h3 className="light_red_text">Grade {grade}</h3>
+                            <ul className="list">
+                                {studentsInGrade.map((student) => (
+                                    <li key={student.id} className="item_name">
+                                        • {student.name}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )
+                )}
+            </div>
         </div>
     );
 };

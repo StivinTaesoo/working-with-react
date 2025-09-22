@@ -12,8 +12,8 @@ const BookList: React.FC = () => {
                 <span className="light_red_text">Book List</span>
             </div>
             <p className="task_summary">
-                Render the books in an ordered list, with numbers automatically
-                appearing before each title.
+                task: Render the books in an ordered list, with numbers
+                automatically appearing before each title.
             </p>
             <ol className="text_left">
                 {books.map((book, index) => {

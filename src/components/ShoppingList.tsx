@@ -12,6 +12,10 @@ const ShoppingList: React.FC<ShoppingListProps> = ({ shoppingList }) => {
                     <span className="item_number">2.1</span>
                     <span>Shopping List</span>
                 </div>
+                <p className="task_summary">
+                    Task: Render the list as items, but strike through "Eggs" to
+                    show it's already bought.
+                </p>
                 <ul className="list">
                     {shoppingList.map((item, index) => (
                         <li key={index} className="item">
