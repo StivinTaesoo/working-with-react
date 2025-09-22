@@ -1,69 +1,87 @@
-# React + TypeScript + Vite
+# React List Rendering Exercises
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of React components demonstrating various list rendering techniques, conditional styling, and data manipulation patterns.
 
-Currently, two official plugins are available:
+## 🚀 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   React 18
+-   TypeScript
+-   CSS3
 
-## Expanding the ESLint configuration
+## 📋 Exercises Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 2.1 ShoppingList.tsx
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Basic list rendering with conditional styling - strikes through purchased items.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 2.2 ProductList.tsx
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Product display with price-based conditional styling - highlights expensive items in red.
+
+### 2.3 MenuCategories.tsx
+
+Nested list structure displaying categorized menu items with proper hierarchy.
+
+### 2.4 BookList.tsx
+
+Ordered list implementation with automatic numbering for book titles.
+
+### 2.5 AnimalFilter.tsx
+
+Array filtering demonstration - displays only animals starting with "E".
+
+### 2.6 StudentGroups.tsx
+
+Advanced grouping using `reduce()` to organize students by grade levels.
+
+### 2.7 MessageList.tsx
+
+Conditional rendering pattern - shows placeholder when no messages exist.
+
+## 🖼️ Screenshots
+
+![Shopping and Product List Components](./src/assets/shopping.png)
+_Shopping list with strikethrough styling for purchased items and Product listing with price-based highlighting_
+
+![Menu Categories and Book List Components](./src/assets/book-list.png)  
+_Nested category structure with fruits and vegetables_
+
+![Animal Filter and Student Groups Components](./src/assets/animal-filter.png)
+_Rendering Animals that starts with letter from an array and grouping of students' grade_
+
+![Message List Component](./src/assets/message-list.png)
+_Conditionally renders messages if they exist_
+
+## 🛠️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone <repository-url>
+
+# Navigate to project directory
+cd working-with-react
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎯 Key Learning Concepts
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+-   Array `.map()` method for rendering lists
+-   Conditional styling with inline styles and CSS classes
+-   Nested list structures and component composition
+-   Array filtering and data manipulation
+-   Using `.reduce()` for data grouping
+-   Conditional rendering patterns
+-   TypeScript integration with React components
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📝 Usage
+
+Each component is self-contained and can be used independently. The main `App.jsx` displays all exercises in a clean, organized layout with proper headings and spacing.
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
