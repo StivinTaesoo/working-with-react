@@ -65,16 +65,21 @@
     text-decoration: line-through;
 }
 
-.space_between {
-    justify-content: space-between;
-}
+/* ======= Custom Classes ======== */
 
+/* Text colors */
 .red_text {
     color: red;
 }
 .light_red_text {
     color: #fcc8c8;
 }
+
+.blue_text {
+    color: #3b82f6;
+}
+
+/* Backgrounds */
 .red_bg {
     background: #fcd5d5;
 }
@@ -84,6 +89,8 @@
 .red_bg:hover {
     background: #fcc8c8;
 }
+
+/* Alignments */
 .d_flex {
     display: flex;
 }
@@ -91,13 +98,16 @@
     display: flex;
     align-items: center;
 }
+.space_between {
+    justify-content: space-between;
+}
+.text_left {
+    text-align: left;
+}
 
 .blue_border {
     border: 0.2px solid #cadcfa;
 }
 .red_border {
     border: 0.2px solid #fcd5d5;
-}
-.text_left {
-    text-align: left;
 }

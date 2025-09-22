@@ -4,7 +4,8 @@ import BookList from "./components/BookList";
 import MenuCategories from "./components/MenuCategories";
 import ProductList from "./components/ProductList";
 import ShoppingList from "./components/ShoppingList";
-import { menuItems, products, shoppingList } from "./data";
+import StudentGroups from "./components/StudentGroups";
+import { menuItems, products, shoppingList, students } from "./data";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <MenuCategories menuData={menuItems} />
             <BookList />
             <AnimalFilter />
+            <StudentGroups students={students} />
         </>
     );
 }

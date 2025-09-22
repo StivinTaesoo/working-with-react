@@ -8,3 +8,9 @@ export interface MenuCategory {
     category: string;
     items: string[];
 }
+
+export interface Student {
+  id: number;
+  name: string;
+  grade: string;
+}

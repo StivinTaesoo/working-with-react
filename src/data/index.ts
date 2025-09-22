@@ -1,4 +1,4 @@
-import type { Product, MenuCategory } from "../types";
+import type { Product, MenuCategory, Student } from "../types";
 
 export const shoppingList = ["Milk", "Bread", "Eggs", "Cheese", "Butter"];
 
@@ -11,4 +11,11 @@ export const products: Product[] = [
 export const menuItems: MenuCategory[] = [
     { category: "Fruits", items: ["Apple", "Banana", "Orange"] },
     { category: "Vegetables", items: ["Carrot", "Spinach"] },
+];
+
+export const students: Student[] = [
+    { id: 1, name: "Alice", grade: "A" },
+    { id: 2, name: "Bob", grade: "B" },
+    { id: 3, name: "Charlie", grade: "A" },
+    { id: 4, name: "David", grade: "C" },
 ];
